@@ -1,0 +1,18 @@
+.video_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.videos {
+  width: 28vw;
+  height: 50vh;
+  object-fit: cover;
+  object-position: top;
+  filter: grayscale(1);
+}
+
+.videos:hover {
+  filter: grayscale(0);
+}

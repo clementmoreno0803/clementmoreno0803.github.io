@@ -1,0 +1,29 @@
+.theme1 {
+    --primary: #4bb1a0;
+    --secondary: #ffff;
+    --thirdly: #ffff;
+}
+
+.theme2 {
+    --primary: #cec7f2;
+    --secondary: #452d5b;
+    --thirdly: #cab9e1;
+}
+
+.theme3 {
+    --primary: #148783;
+    --secondary: #e2d2b9;
+    --thirdly: #cab9e1;
+}
+
+.theme4 {
+    --primary: #f2c7ec;
+    --secondary: #a34604;
+    --thirdly: #cab9e1;
+}
+
+.theme5 {
+    --primary: #f3d2df;
+    --secondary: #41305c;
+    --thirdly: #6A8D92;
+}

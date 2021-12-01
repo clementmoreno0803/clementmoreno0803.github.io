@@ -1,0 +1,368 @@
+@import url(/css/config/index.css);
+@import url(/css/components/box_video.css);
+@import url(/css/components/slider.css);
+@import url(/css/components/dino_game.css);
+:root {
+    --primary: #4bb1a0;
+    --secondary: #ffff;
+    --thirdly: #ffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--primary);
+}
+
+
+/* FONTS */
+
+h1 {
+    font-family: 'PerpetuaTitlingMTLight2';
+    color: var(--secondary);
+    font-weight: 300;
+    font-size: 2.225em;
+    width: 80vw;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 22vw;
+    letter-spacing: 10px;
+}
+
+h2 {
+    font-family: 'PerpetuaTitlingMTLight2';
+    color: var(--secondary);
+    font-weight: 300;
+    font-size: 80px;
+    text-transform: uppercase;
+    z-index: 3;
+    position: relative;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: justify;
+    width: 80%;
+    font-family: 'Rajdhani';
+    text-transform: uppercase;
+    color: var(--thirdly);
+}
+
+h4 {
+    /* position: sticky; */
+    font-family: 'Rajdhani';
+    color: var(--secondary);
+    text-transform: uppercase;
+}
+
+
+/* Navigation */
+
+nav {
+    position: fixed;
+    top: 0px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 5%;
+    z-index: 99;
+    background: var(--primary);
+}
+
+nav.active {
+    border-bottom: 1px solid var(--thirdly);
+    background: var(--primary);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 5px;
+    font-family: 'Rajdhani';
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+    cursor: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary);
+    position: relative;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    background: var(--secondary);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+nav ul li:first-child {
+    border-right: 1px solid var(--secondary);
+}
+
+nav ul li:nth-child(2) {
+    border-right: 1px solid var(--secondary);
+}
+
+nav ul li:nth-child(3) {
+    border-right: 1px solid var(--secondary);
+}
+
+
+/* Cursor */
+
+.cursor {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0.4;
+    border-radius: 50%;
+    filter: blur(10px);
+    background: var(--secondary);
+    transition: all 0.3s ease-out;
+    transform: translate(-60%, -60%);
+    pointer-events: none;
+}
+
+.cursor::after {
+    content: "";
+    width: 0;
+    height: 0;
+    transition: all 0.4s ease-in;
+}
+
+
+/* Main */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    position: sticky;
+}
+
+.introduction {
+    position: sticky;
+    top: 60px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.title_in_front_of {
+    position: relative;
+}
+
+.title_in_back_of {
+    position: relative;
+    z-index: 3;
+}
+
+.title_and_scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.scrolling_btn {
+    width: 120px;
+    height: 120px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+    z-index: 7;
+    background: var(--primary);
+}
+
+.small_logo {
+    width: 30px;
+    height: 5px;
+    background: var(--secondary);
+    border-radius: 25px;
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+}
+
+
+/* Présentation */
+
+.presentation {
+    position: relative;
+    z-index: 5;
+    width: 80%;
+    left: 20%;
+    display: flex;
+    background: var(--primary);
+    border-top: 1px solid var(--thirdly);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn_rotation {
+    display: inline-block;
+    opacity: 0.6;
+    font-size: 24px;
+    transition: all 0.4s ease-in-out;
+}
+
+.spin {
+    transform: rotate(0deg);
+    transform-origin: center;
+    transition: all 0.6s ease;
+}
+
+.spin.active {
+    transform: rotate(200deg);
+    transform-origin: center;
+}
+
+.btn_rotation:hover {
+    opacity: 1;
+}
+
+
+/* Projets */
+
+.projets {
+    position: relative;
+    z-index: 6;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: var(--primary);
+    border-top: 1px solid var(--thirdly);
+    overflow: hidden;
+}
+
+.works_container {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate( -90deg) translate(-100vh);
+    transform-origin: top left;
+    position: absolute;
+    z-index: 55;
+    overflow-x: hidden;
+    top: 40px;
+}
+
+.project_categories {
+    position: absolute;
+    height: 100vh;
+    z-index: 8;
+    width: 160vw;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.asset {
+    transform: rotateX(90deg);
+    transform-origin: center;
+    transition: all 1.2s ease;
+}
+
+.asset.active {
+    transform: rotateX(0deg);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.project_title {
+    border-top: 1px solid var(--secondary);
+    padding-top: 10px;
+}
+
+.category1 {
+    width: 25vw;
+}
+
+.category2 {
+    width: 15vw;
+}
+
+.category3 {
+    width: 20vw;
+}
+
+.category4 {
+    width: 15vw;
+}
+
+.category5 {
+    width: 20vw;
+}
+
+.category6 {
+    width: 15vw;
+}
+
+
+/* ---- CLIENTS ---- */
+
+.clients {
+    position: relative;
+    border-top: 1px solid var(--secondary);
+    background: var(--primary);
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid var(--secondary);
+    padding-bottom: 10px;
+}
+
+#client_title {
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.logo_in_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.logo {
+    background: var(--primary);
+    fill: var(--secondary);
+    transition: fill 0.3s ease-in-out;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--secondary);
+    border-collapse: collapse;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-between;
+}

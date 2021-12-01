@@ -1,0 +1,203 @@
+.dinogame {
+  width: 50vw;
+  height: 250px;
+  border: 1px solid rgb(4, 46, 4);
+  background: #fdfdfd;
+  position: absolute;
+  z-index: 99;
+  display: none;
+  overflow: hidden;
+  inset: 0;
+  margin: auto;
+}
+
+#dino {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 165px;
+  background-image: url('../../Assets/images/dino.png');
+  background-size: 100px 100px;
+  left: 80px;
+  z-index: 3;
+}
+
+#cactus {
+  width: 70px;
+  height: 70px;
+  /* background-image: url('/Assets/images/catsuius.png'); */
+  background-size: 70px 70px;
+  background-color: yellow;
+  position: relative;
+  top: 85px;
+  left: 100%;
+  filter: grayscale(1);
+  animation: cactusius 5s linear infinite;
+  z-index: 3;
+}
+
+#cactus_deux {
+  width: 70px;
+  height: 70px;
+  /* background-image: url('/Assets/images/catsuius.png'); */
+  background-color: orange;
+  background-size: 70px 70px;
+  position: relative;
+  top: 15px;
+  left: 50%;
+  filter: grayscale(1);
+  animation: cactusius 10.3s linear infinite;
+  z-index: 3;
+}
+
+#cactus_trois {
+  width: 70px;
+  height: 70px;
+  /* background-image: url('/Assets/images/catsuius.png'); */
+  background-size: 70px 70px;
+  background-color: blue;
+  position: relative;
+  bottom: 60px;
+  left: 50%;
+  filter: grayscale(1);
+  animation: cactusius 9.3s linear infinite;
+  z-index: 3;
+}
+
+#cactus_scaled {
+  width: 70px;
+  height: 70px;
+  /* background-image: url(/Assets/images/catsuius.png); */
+  background-color: green;
+  background-size: 70px 70px;
+  position: relative;
+  top: -60px;
+  left: 0%;
+  transform: scale(0.8);
+  filter: grayscale(1);
+  animation: cactusdeuxbranches 5s linear infinite;
+  z-index: 3;
+}
+
+#cloud {
+  width: 50%;
+  height: 50px;
+  background-image: url('../../Assets/images/cloud.png');
+  background-size: 60px 40px;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 76px;
+  left: -200px;
+  /* background-color: green; */
+  filter: grayscale(1);
+  animation: cloud 2s linear infinite;
+  z-index: 2;
+}
+
+#sol {
+  width: 100%;
+  height: 90px;
+  background-image: url(/Assets/images/sol.gif);
+  background-size: 26px 140px;
+  position: absolute;
+  top: 165px;
+  left: 0px;
+  z-index: 1;
+  filter: grayscale(1);
+}
+
+.jump {
+  animation: jump 1s ease infinite
+}
+
+@keyframes jump {
+  0% {
+    top: 172px;
+  }
+  50% {
+    top: 30px;
+  }
+  /* 80% {
+    top: 90px;
+  } */
+  100% {
+    top: 172px;
+  }
+}
+
+.right {
+  animation: right 1s ease-out infinite
+}
+
+@keyframes right {
+  0% {
+    left: 80px;
+  }
+  50% {
+    left: 360px;
+  }
+  100% {
+    left: 80px;
+  }
+}
+
+.left {
+  animation: left 1s linear infinite
+}
+
+@keyframes left {
+  0% {
+    left: 80px;
+  }
+  30% {
+    left: 40px;
+  }
+  50% {
+    left: -20px;
+  }
+  80% {
+    left: 40px;
+  }
+  100% {
+    left: 80px;
+  }
+}
+
+.cactus {
+  animation: cactusius 4s linear infinite
+}
+
+@keyframes cactusius {
+  0% {
+    left: 150%;
+  }
+  100% {
+    left: -150%;
+  }
+}
+
+.cactusius {
+  animation: cactusdeuxbranches 4s linear infinite
+}
+
+@keyframes cactusdeuxbranches {
+  0% {
+    left: 150%;
+  }
+  100% {
+    left: -150%;
+  }
+}
+
+.cloud {
+  animation: cloud 1.5s linear infinite
+}
+
+@keyframes cloud {
+  0% {
+    left: 120%;
+  }
+  100% {
+    left: -20%;
+  }
+}
