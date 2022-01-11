@@ -462,13 +462,14 @@ function hmrAcceptRun(bundle, id) {
 var _bordernav = require("../javascript/components/bordernav");
 var _switchcolors = require("../javascript/components/switchcolors");
 var _workrotate = require("../javascript/components/workrotate");
-var _dino = require("./components/dino");
+// import { initSurprise } from "./components/dino";
+var _cercle = require("./components/cercle");
 _bordernav.initBorderNav();
 _switchcolors.initSwitchColors();
-_workrotate.initWorkRotation();
-_dino.initSurprise();
+_workrotate.initWorkRotation(); // initSurprise()
+ // initCercle()
 
-},{"../javascript/components/bordernav":"dqWpo","../javascript/components/switchcolors":"H2Iak","../javascript/components/workrotate":"2UH2g","./components/dino":"cQZKr"}],"dqWpo":[function(require,module,exports) {
+},{"../javascript/components/bordernav":"dqWpo","../javascript/components/switchcolors":"H2Iak","../javascript/components/workrotate":"2UH2g","./components/cercle":"cO7B5"}],"dqWpo":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "initBorderNav", ()=>initBorderNav
@@ -556,46 +557,17 @@ const initWorkRotation = ()=>{
 };
 exports.default = initWorkRotation;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"cQZKr":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"cO7B5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "initSurprise", ()=>initSurprise
+parcelHelpers.export(exports, "initCercle", ()=>initCercle
 );
-const start = document.querySelector('#work_title');
-const dinogame = document.querySelector('.dinogame');
-const dino = document.querySelector('#dino');
-const cactus = document.querySelector('#cactus');
-const cactus2 = document.querySelector('#cactus_deux');
-const cactus3 = document.querySelector('#cactus_trois');
-const cactus4 = document.querySelector('#cactus_scaled');
-const initSurprise = ()=>{
-    function jump() {
-        dino.classList.add('jump');
-        setTimeout(()=>{
-            dino.classList.remove('jump');
-        }, 800);
-    }
-    const isAlive = setInterval(function() {
-        // get current dino Y position
-        const dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
-        // get current cactus X position
-        const cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
-        const cactus2Left = parseInt(window.getComputedStyle(cactus2).getPropertyValue("left"));
-        const cactus3Left = parseInt(window.getComputedStyle(cactus3).getPropertyValue("left"));
-        const cactus4Left = parseInt(window.getComputedStyle(cactus4).getPropertyValue("left"));
-        // detect collision
-        if (cactusLeft < 100 && cactusLeft > 40 && dinoTop >= 140 || cactus2Left < 100 && cactus2Left > 40 && dinoTop >= 140 || cactus3Left < 100 && cactus3Left > 40 && dinoTop >= 140 || cactus4Left < 100 && cactus4Left > 40 && dinoTop >= 140) // collision
-        alert("Allez, encore p'tite dernière ?!");
-    }, 10);
-    window.addEventListener('keydown', (keypressed)=>{
-        if (start) {
-            if (keypressed.key === "h") dinogame.style.display = "block";
-            if (keypressed.key === "i" || keypressed.key === "r" || keypressed.key === "e") jump();
-            if (keypressed.key === "m") dinogame.style.display = "none";
-        }
-    });
+const cercle = document.querySelector('.cercle');
+const presentation = document.querySelector('.presentation');
+const initCercle = ()=>{
+    presentation.prepend(cercle);
 };
-exports.default = initSurprise;
+exports.default = initCercle;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}]},["8UuSm","2wQFf"], "2wQFf", "parcelRequire94c2")
 

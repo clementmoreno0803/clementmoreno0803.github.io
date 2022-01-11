@@ -366,3 +366,9 @@ nav ul li:nth-child(3) {
     display: flex;
     justify-content: space-between;
 }
+
+.cercle {
+    width: 60px;
+    height: 60px;
+    background: red;
+}
