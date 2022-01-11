@@ -1,5 +1,3 @@
-export const initSwitchColors = () => {
-
     const theme = ['theme1', 'theme2', 'theme3', 'theme4', 'theme5'];
     let previousNumber = -1
     document.body.addEventListener('click', () => {
@@ -17,7 +15,3 @@ export const initSwitchColors = () => {
             const result = document.body.classList.add(selectedTheme);
         }
     })
-
-}
-
-export default initSwitchColors
