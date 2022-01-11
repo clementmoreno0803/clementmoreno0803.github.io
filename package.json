@@ -1,5 +1,10 @@
 {
-  "devDependencies": {
-    "parcel": "^2.0.1"
-  }
+    "devDependencies": {
+        "parcel": "^2.0.1"
+    },
+    "scripts": {
+        "start": "parcel ./*.html",
+        "predeploy": "rm -rf dist && parcel build ./*.html --public-url clementmoreno0803",
+        "deploy": "gh-pages -d dist"
+    }
 }
