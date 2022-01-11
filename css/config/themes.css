@@ -5,25 +5,25 @@
 }
 
 .theme2 {
-    --primary: #cec7f2;
-    --secondary: #452d5b;
-    --thirdly: #cab9e1;
+    --primary: #194555;
+    --secondary: #f8da94;
+    --thirdly: #fff;
 }
 
 .theme3 {
-    --primary: #148783;
-    --secondary: #e2d2b9;
-    --thirdly: #cab9e1;
+    --primary: #d2c5f4;
+    --secondary: #130f66;
+    --thirdly: #fff;
 }
 
 .theme4 {
-    --primary: #f2c7ec;
-    --secondary: #a34604;
-    --thirdly: #cab9e1;
+    --primary: #3d5a5b;
+    --secondary: #e89f72;
+    --thirdly: #fff;
 }
 
 .theme5 {
-    --primary: #f3d2df;
-    --secondary: #41305c;
-    --thirdly: #6A8D92;
+    --primary: #ebdade;
+    --secondary: #444e64;
+    --thirdly: #fff;
 }
