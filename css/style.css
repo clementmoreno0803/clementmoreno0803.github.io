@@ -273,7 +273,7 @@ nav ul li:nth-child(3) {
     position: absolute;
     height: 100vh;
     z-index: 8;
-    width: 160vw;
+    width: 180vw;
     display: flex;
     align-items: center;
     gap: 90px;
@@ -285,6 +285,7 @@ nav ul li:nth-child(3) {
     transform: rotateX(90deg);
     transform-origin: center;
     transition: all 1.2s ease;
+    cursor: pointer;
 }
 
 .asset.active {
@@ -301,27 +302,13 @@ nav ul li:nth-child(3) {
 }
 
 .category1 {
-    width: 25vw;
+    width: 45vw;
+    height: 450px;
 }
 
 .category2 {
-    width: 15vw;
-}
-
-.category3 {
-    width: 20vw;
-}
-
-.category4 {
-    width: 15vw;
-}
-
-.category5 {
-    width: 20vw;
-}
-
-.category6 {
-    width: 15vw;
+    width: 25vw;
+    height: 300px;
 }
 
 
