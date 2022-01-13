@@ -304,11 +304,13 @@ nav ul li:nth-child(3) {
 .category1 {
     width: 45vw;
     height: 450px;
+    object-fit: cover;
 }
 
 .category2 {
     width: 25vw;
     height: 300px;
+    object-fit: cover;
 }
 
 
