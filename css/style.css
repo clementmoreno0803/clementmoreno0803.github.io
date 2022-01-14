@@ -100,7 +100,13 @@ a {
     position: relative;
 }
 
-a::after {
+nav a {
+    text-decoration: none;
+    color: var(--secondary);
+    position: relative;
+}
+
+nav a::after {
     content: "";
     position: absolute;
     width: 0;
@@ -111,7 +117,7 @@ a::after {
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
-a:hover:after {
+nav a:hover:after {
     width: 100%;
     left: 0;
 }
@@ -302,7 +308,7 @@ nav ul li:nth-child(3) {
 }
 
 .category1 {
-    width: 45vw;
+    width: 50vw;
     height: 450px;
     object-fit: cover;
 }
