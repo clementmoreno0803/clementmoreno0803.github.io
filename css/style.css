@@ -394,7 +394,7 @@ nav ul li:nth-child(3) {
         width: 100vw;
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 40px;
         transform: rotate( 90deg) translateY(-80vh);
         flex-wrap: wrap;
     }
