@@ -384,7 +384,11 @@ nav ul li:nth-child(3) {
         font-size: 1.225em;
         margin-left: 0;
     }
+    h2 {
+        opacity: 0.3;
+    }
     h3 {
+        font-size: 16px;
         position: relative;
     }
     .project_categories {
@@ -397,6 +401,7 @@ nav ul li:nth-child(3) {
         gap: 40px;
         transform: rotate( 90deg) translateY(-80vh);
         flex-wrap: wrap;
+        left: 17%;
     }
     .category1 {
         width: 40vw;
