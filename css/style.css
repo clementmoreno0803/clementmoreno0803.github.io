@@ -386,6 +386,26 @@ nav ul li:nth-child(3) {
     }
     h3 {
         position: relative;
-        left: 10%;
+    }
+    .project_categories {
+        position: absolute;
+        height: 70vh;
+        z-index: 8;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transform: rotate( 90deg) translateY(-80vh);
+        flex-wrap: wrap;
+    }
+    .category1 {
+        width: 40vw;
+        height: 120px;
+        object-fit: cover;
+    }
+    .category2 {
+        width: 40vw;
+        height: 120px;
+        object-fit: cover;
     }
 }
