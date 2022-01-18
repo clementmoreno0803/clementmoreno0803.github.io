@@ -372,8 +372,17 @@ nav ul li:nth-child(3) {
     #job_title {
         display: none;
     }
+    .introduction {
+        top: 0;
+    }
     .presentation {
         flex-direction: column;
+        width: 90%;
+        left: 10%;
+    }
+    h1 {
+        font-size: 1.225em;
+        margin-left: 0;
     }
     h3 {
         position: relative;
