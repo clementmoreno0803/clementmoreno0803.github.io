@@ -279,7 +279,7 @@ nav ul li:nth-child(3) {
     position: absolute;
     height: 100vh;
     z-index: 8;
-    width: 180vw;
+    width: 250vw;
     display: flex;
     align-items: center;
     gap: 90px;
@@ -366,4 +366,17 @@ nav ul li:nth-child(3) {
     width: 60px;
     height: 60px;
     background: red;
+}
+
+@media (max-width:688px) {
+    #job_title {
+        display: none;
+    }
+    .presentation {
+        flex-direction: column;
+    }
+    h3 {
+        position: relative;
+        left: 10%;
+    }
 }
