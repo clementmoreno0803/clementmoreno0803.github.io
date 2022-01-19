@@ -398,6 +398,9 @@ nav ul li:nth-child(3) {
         position: relative;
         left: 10%;
     }
+    .projets {
+        height: 80vh;
+    }
     .project_categories {
         position: absolute;
         height: 70vh;
