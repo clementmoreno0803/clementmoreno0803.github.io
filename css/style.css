@@ -29,7 +29,6 @@ h1 {
     width: 80vw;
     text-transform: uppercase;
     position: relative;
-    margin-left: 22vw;
     letter-spacing: 10px;
 }
 
@@ -168,12 +167,16 @@ nav ul li:nth-child(3) {
 
 .introduction {
     position: sticky;
-    top: 60px;
+    top: 30vh;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+#prenom {
+    font-size: 13px;
 }
 
 .title_in_front_of {
@@ -183,13 +186,6 @@ nav ul li:nth-child(3) {
 .title_in_back_of {
     position: relative;
     z-index: 3;
-}
-
-.title_and_scroll {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
 }
 
 .scrolling_btn {
