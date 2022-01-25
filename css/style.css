@@ -173,39 +173,30 @@ nav ul li:nth-child(3) {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    transform: translateX(-25vh);
+    opacity: 0;
+    animation: setup 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes setup {
+    0% {
+        transform: translateX(-25vh);
+    }
+    100% {
+        transform: translateX(0vh);
+        opacity: 1;
+    }
 }
 
 #prenom {
     font-size: 13px;
 }
 
-.title_in_front_of {
-    position: relative;
-}
-
-.title_in_back_of {
-    position: relative;
-    z-index: 3;
-}
-
-.scrolling_btn {
-    width: 120px;
-    height: 120px;
-    border: 1px solid white;
-    border-radius: 50%;
-    position: relative;
-    z-index: 7;
-    background: var(--primary);
-}
-
-.small_logo {
-    width: 30px;
-    height: 5px;
+.barre_intro {
+    width: 50px;
     background: var(--secondary);
-    border-radius: 25px;
-    position: absolute;
-    bottom: 20px;
-    left: 60px;
+    height: 2px;
 }
 
 
