@@ -266,7 +266,7 @@ nav ul li:nth-child(3) {
     position: absolute;
     height: 100vh;
     z-index: 8;
-    width: 200vw;
+    width: 240vw;
     display: flex;
     align-items: center;
     gap: 90px;
