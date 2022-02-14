@@ -81,6 +81,7 @@ nav.active {
 nav ul {
     display: flex;
     align-items: center;
+    padding: 0;
 }
 
 nav ul li {
@@ -266,7 +267,7 @@ nav ul li:nth-child(3) {
     position: absolute;
     height: 100vh;
     z-index: 8;
-    width: 240vw;
+    width: 330vw;
     display: flex;
     align-items: center;
     gap: 90px;
@@ -356,6 +357,9 @@ nav ul li:nth-child(3) {
 }
 
 @media (max-width:688px) {
+    nav {
+        justify-content: center;
+    }
     #job_title {
         display: none;
     }
@@ -386,7 +390,11 @@ nav ul li:nth-child(3) {
         left: 10%;
     }
     .projets {
-        height: 80vh;
+        height: 130vh;
+    }
+    .works_container {
+        width: 120vh;
+        overflow: visible;
     }
     .project_categories {
         position: absolute;
@@ -395,7 +403,7 @@ nav ul li:nth-child(3) {
         width: 100vw;
         display: flex;
         align-items: center;
-        gap: 40px;
+        gap: 30px;
         transform: rotate( 90deg) translateY(-80vh);
         flex-wrap: wrap;
         left: 17%;
